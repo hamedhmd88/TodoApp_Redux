@@ -15,9 +15,9 @@ const FilterButton = () => {
       onChange={(e) => handleFilter(e.target.value)}
       className=" cursor-pointer  text-lg px-2 py-1 ml-3 border-blue-300 bg-blue-800 hover:bg-blue-600  text-white focus:outline-none rounded"
       >
-      <option value='ALL' >پیشفرض</option>
-      <option value='COMPLETED' >تکمیل شده</option>
-      <option value='INCOMPLETE' >تکمیل نشده</option>
+      <option value='ALL' >همه وظایف</option>
+      <option value='COMPLETED' >وظایف تکمیل شده</option>
+      <option value='INCOMPLETE' >وظایف تکمیل نشده</option>
       </select>
       <button onClick={() => dispatch(markAllCompleted())} className=" text-lg px-2 py-1 bg-blue-800 text-white ml-2 rounded hover:bg-blue-600">    تکمیل کردن تمام وظایف</button>
   </div>

@@ -11,14 +11,14 @@ const Todo = () => {
   const [searchText, setSearchText] = useState("");
   const handleAddTodo = (text) => {
     dispatch(addTodo(text));
-    dispatch("")
-    setTodoText("");
+    dispatch(" ")
+    setTodoText(" ");
   }
   const saveTodo = () => {
     if (todoText.trim() !== ""){
       handleAddTodo(todoText.trim());
-      setTodoText("");
     }
+
   }
   const handleSearchTodo = (value) => {
     setSearchText(value)
