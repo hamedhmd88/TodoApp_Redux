@@ -9,9 +9,9 @@ const TodoItems = ({todo, index}) => {
   return (
     <li className="flex flex-col md:flex-row sm:items-center justify-between border-b-2 py-2 gap-4">
         <div className="flex items-center flex-wrap">
-        <span className="mr-4 font-bold text-blue-800">{index + 1}</span>
-            <span className={`mr-4 font-bold ${
-                todo.completed ? "line-through text-black" : ""
+        <span className="mr-4 font-bold text-white">{index + 1}</span>
+            <span className={`mr-4 font-bold text-xl  ${
+                todo.completed ? "line-through text-black" : "text-white"
             }`}>{todo.text}</span>
 
         </div>

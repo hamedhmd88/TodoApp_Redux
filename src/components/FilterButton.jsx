@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const FilterButton = () => {
 
-  const {t} = useTranslation();
+  const {t, i18n} = useTranslation();
 
     const dispatch = useDispatch();
     const currentFilter = useSelector((state => state.filter))
@@ -17,13 +17,13 @@ const FilterButton = () => {
     <select 
       value={currentFilter}
       onChange={(e) => handleFilter(e.target.value)}
-      className=" cursor-pointer  text-lg px-2 py-1 ml-3 border-blue-300 bg-blue-800 hover:bg-blue-600  text-white focus:outline-none rounded"
+      className={`cursor-pointer  text-lg px-2 py-1 ml-3 border-blue-300 transition-all text-white focus:outline-none rounded ${i18n.language === "fa" ? "bg-blue-800 hover:bg-blue-600 " : "bg-indigo-800 hover:bg-blue-800 "}` }
       >
       <option value='ALL' >{t("all duties")} </option>
       <option value='COMPLETED' > {t("completed")} </option>
       <option value='INCOMPLETE' > {t("uncompleted")} </option>
       </select>
-      <button onClick={() => dispatch(markAllCompleted())} className=" text-lg px-2 py-1 bg-blue-800 text-white ml-2 rounded hover:bg-blue-600">   {t("completed all")}    </button>
+      <button onClick={() => dispatch(markAllCompleted())} className={`text-lg px-2 py-1  transition-all text-white ml-2 rounded ${i18n.language === "fa" ? "bg-blue-800 hover:bg-blue-600 " : "bg-indigo-800 hover:bg-blue-800 "}`}>   {t("completed all")}    </button>
   </div>
   )
 }

@@ -6,7 +6,7 @@ export const en = {
     "all duties": "All Duties",
     "completed": "Completed Tasks",
     "uncompleted": "Uncompleted Tasks",
-    "completed all": "completed All Tasks",
+    "completed all": "Completed All Tasks",
 
 }
 

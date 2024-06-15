@@ -22,7 +22,7 @@ const List = () => {
     });
   }, [filterTodos, filter, search]);
   return (
-    <ul className=" m-4">
+    <ul className=" mx-4 my-6 bg-cyan-800 p-3 rounded ">
         {
             filteredTodos.map((todo, i) => (
                 <TodoItems key={i} todo={todo} index={i} />
