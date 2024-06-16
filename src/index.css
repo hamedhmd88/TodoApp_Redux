@@ -29,5 +29,9 @@
          @apply bg-neutral-900 font-Vazirmatn
         
     }
+
+    select:focus{
+        background-color: #3d31ac;
+    }
 }
 
