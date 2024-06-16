@@ -46,7 +46,7 @@ const {i18n: {changeLanguage, dir, language }, t} = useTranslation()
       
       <select 
         onChange={onChangeLocale} value={language}
-        className=" m-2 cursor-pointer  text-lg px-2 py-1 ml-3 border-blue-300 bg-blue-800 hover:bg-blue-600  text-white focus:outline-none rounded"
+        className=" m-2 cursor-pointer  text-lg px-2 py-1 ml-3 border-blue-300 bg-blue-800   text-white focus:outline-none rounded"
         >
         <option value="en">English</option>
         <option value="fa">Persian</option>

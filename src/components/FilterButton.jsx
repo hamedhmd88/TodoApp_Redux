@@ -17,7 +17,7 @@ const FilterButton = () => {
     <select 
       value={currentFilter}
       onChange={(e) => handleFilter(e.target.value)}
-      className={`cursor-pointer  text-lg px-2 py-1 ml-3 border-blue-300 transition-all text-white focus:outline-none rounded ${i18n.language === "fa" ? "bg-blue-800 hover:bg-blue-600 " : "bg-indigo-800 hover:bg-blue-800 "}` }
+      className={`cursor-pointer  text-lg px-2 py-1 ml-3 border-blue-300 transition-all text-white focus:outline-none rounded ${i18n.language === "fa" ? "bg-blue-800  " : "bg-indigo-800 "}` }
       >
       <option value='ALL' >{t("all duties")} </option>
       <option value='COMPLETED' > {t("completed")} </option>
