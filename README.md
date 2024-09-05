@@ -12,4 +12,4 @@ Implemented a search feature to quickly find specific tasks.
 
 <a href="https://todo-app-redux-5xjb.vercel.app//">Live Demo Link</a>
 
-![project](./assets/project.png)
+![project](./src/assets/project.png)
